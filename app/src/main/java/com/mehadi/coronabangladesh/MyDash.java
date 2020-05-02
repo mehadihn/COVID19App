@@ -13,6 +13,7 @@ public class MyDash extends AppCompatActivity {
     private LinearLayout newsLa;
     private LinearLayout banglaAct;
     private LinearLayout worldAct;
+    private LinearLayout hospital;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +42,15 @@ public class MyDash extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MyDash.this, world.class);
+                startActivity(i);
+            }
+        });
+
+        hospital = findViewById(R.id.hospital);
+        hospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, hospital.class);
                 startActivity(i);
             }
         });

@@ -20,7 +20,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class world extends AppCompatActivity {
-    TextView worldTotalRecover , worldTotalDeath , worldTotalConfirm;
+    TextView worldTotalRecover , worldTotalDeath , worldTotalConfirm, worldTodayNewCase , worldTodayNewDeath , worldActive , worldCritical;
     private RequestQueue mQueue;
     ProgressBar progressBar;
     @Override
@@ -32,6 +32,10 @@ public class world extends AppCompatActivity {
         worldTotalDeath = findViewById(R.id.worldTotalDeath);
         worldTotalConfirm = findViewById(R.id.worldTotalConfirm);
         progressBar = findViewById(R.id.worldProgress);
+        worldTodayNewCase = findViewById(R.id.worldTodayNewCase);
+        worldTodayNewDeath = findViewById(R.id.worldTodayNewDeath);
+        worldActive = findViewById(R.id.worldActive);
+        worldCritical = findViewById(R.id.worldCritical);
 
         mQueue = Volley.newRequestQueue(this);
 
@@ -50,6 +54,11 @@ public class world extends AppCompatActivity {
                     worldTotalConfirm.setText(jsonObject.getString("cases"));
                     worldTotalDeath.setText(jsonObject.getString("deaths"));
                     worldTotalRecover.setText(jsonObject.getString("recovered"));
+                    worldTodayNewCase.setText(jsonObject.getString("todayCases"));
+                    worldTodayNewDeath.setText(jsonObject.getString("todayDeaths"));
+                    worldActive.setText(jsonObject.getString("active"));
+                    worldCritical.setText(jsonObject.getString("critical"));
+
 
                 }catch (JSONException e) {
                     Context context = getApplicationContext();
