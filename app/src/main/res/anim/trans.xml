@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:andorid="http://schemas.android.com/apk/res/android"
+    andorid:fromAlpha="0.0"
+    andorid:toAlpha="1.0"
+    />
+
