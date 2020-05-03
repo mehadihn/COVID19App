@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps"
+    android:background="@drawable/bgapps1"
     tools:context=".helpline"
     android:orientation="vertical">
 
@@ -21,7 +20,7 @@
         android:padding="20dp"/>
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
             android:orientation="vertical"
@@ -43,6 +42,7 @@
                 android:alignmentMode="alignMargins"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
@@ -62,32 +62,725 @@
 
                         <LinearLayout
                             android:layout_weight="1"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <TextView
                                 android:fontFamily="@font/roboto_bold"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_marginTop="12dp"
-                                android:text="Kuwait Bangladesh Friendship Government Hospital"
+                                android:text="স্বাস্থ্য বাতায়ন - স্বাস্থ্য অধিদপ্তর"
                                 android:textColor="#6f6f6f"
                                 android:textSize="20sp"/>
                             <TextView
                                 android:fontFamily="@font/roboto_regular"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
                                 android:layout_marginTop="12dp"
-                                android:text="319 Isakha Ave, Dhaka 1230
-"
+                                android:text="16263"
                                 android:textColor="#6f6f6f"
                                 android:textSize="18sp"/>
+
+
 
                         </LinearLayout>
 
                         <ImageView
-                            android:id="@+id/kuwaitCall"
+                            android:id="@+id/shasto"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="A2I Program, ICT Division"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="333"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/a2i"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="IEDCR Helpline 1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="10655"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iedcr1"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="IEDCR Helpline 2"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01944333222"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iedcr2"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="IEDCR Helpline 3"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01937000011"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iedcr3"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="IEDCR Helpline 4"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01937110011"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iedcr4"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="IEDCR Helpline 5"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01927711784"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iedcr5"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="IEDCR Helpline 6"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01927711785"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iedcr6"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="ICDDR,B Helpline 1"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01401184551"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icddrb1"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="ICDDR,B Helpline 2"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01401184554"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icddrb2"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="ICDDR,B Helpline 3"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01401184555"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icddrb3"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="ICDDR,B Helpline 4"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01401184556"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icddrb4"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="ICDDR,B Helpline 5"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01401184559"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icddrb5"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="ICDDR,B Helpline 6"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="12dp"
+                                android:text="01401184560"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/icddrb6"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
                             android:src="@drawable/dial" />

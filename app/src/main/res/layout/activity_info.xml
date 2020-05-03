@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps2"
+    tools:context=".info"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="20dp"
+        android:text="COVID-19 Information"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Be Ready for Coronavirus"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:padding="10dp"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready1"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready2"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready3"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready4"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready5"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready6"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/beready7"/>
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/pro1"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/pro2"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/pro3"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/pro4"/>
+
+
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Be Active at Home"
+                                android:textColor="#000000"
+                                android:textSize="25sp"
+                                android:padding="10dp"/>
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act1"/>
+"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act2"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act3"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act4"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act5"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act6"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/act7"/>
+
+
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Getting Workplace Ready"
+                            android:textColor="#000000"
+                            android:textSize="25sp"
+                            android:padding="10dp"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work1"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work2"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work3"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work4"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work5"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work6"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work7"/>
+
+                                <ImageView
+                                    android:layout_marginRight="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="300dp"
+                                    android:src="@drawable/work8"/>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp">
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Stay Healthy While Travelling"
+                                android:textColor="#000000"
+                                android:textSize="25sp"
+                                android:padding="10dp"/>
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/hel1"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/hel2"/>
+
+                                    <ImageView
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/hel3"/>
+
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

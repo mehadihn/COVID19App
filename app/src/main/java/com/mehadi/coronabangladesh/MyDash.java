@@ -3,6 +3,7 @@ package com.mehadi.coronabangladesh;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -19,7 +20,7 @@ public class MyDash extends AppCompatActivity {
     private RelativeLayout banglaAct;
     private RelativeLayout worldAct;
     private RelativeLayout hospital;
-    private RelativeLayout helpline;
+    private RelativeLayout helpline , faq, information;
 
     private TextView greeting;
     @Override
@@ -39,15 +40,8 @@ public class MyDash extends AppCompatActivity {
         }else if(timeOfDay >= 16 && timeOfDay < 21){
             greeting.setText("Good Evening");
         }else if(timeOfDay >= 21 && timeOfDay < 24){
-            greeting.setText("Good Night");
+            greeting.setText("Good Evening");
         }
-
-
-
-
-
-
-
 
 
 
@@ -55,8 +49,8 @@ public class MyDash extends AppCompatActivity {
         newsLa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MyDash.this, newsActivity.class);
-                startActivity(i);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.prothomalo.com/live/"));
+                startActivity(browserIntent);
             }
         });
 
@@ -96,5 +90,25 @@ public class MyDash extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        faq = findViewById(R.id.faq);
+        faq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, faq.class);
+                startActivity(i);
+            }
+        });
+
+        information = findViewById(R.id.information);
+        information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, info.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 }
