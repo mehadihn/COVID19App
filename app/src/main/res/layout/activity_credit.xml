@@ -46,7 +46,7 @@
         android:fontFamily="@font/roboto_regular"
         android:textColor="#000000"
         android:textAlignment="center"
-        android:text="Hello There! Thank you for using the app. This app was develop with the help of YouTube and other platforms. I am still learning, do pardon my mistakes."
+        android:text="Hello There! Thank you for using the app. This app was developed with the help of YouTube and other platforms. I am still learning, do pardon my mistakes."
         />
 
 
@@ -58,7 +58,7 @@
         android:fontFamily="@font/roboto_bold"
         android:textColor="#000000"
         android:textAlignment="center"
-        android:text="Developeved By"
+        android:text="Developed By"
         />
 
     <TextView
