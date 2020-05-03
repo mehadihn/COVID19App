@@ -20,7 +20,7 @@ public class MyDash extends AppCompatActivity {
     private RelativeLayout banglaAct;
     private RelativeLayout worldAct;
     private RelativeLayout hospital;
-    private RelativeLayout helpline , faq, information;
+    private RelativeLayout helpline , faq, information, myth, handwash;
 
     private TextView greeting;
     @Override
@@ -35,9 +35,9 @@ public class MyDash extends AppCompatActivity {
 
         if(timeOfDay >= 0 && timeOfDay < 12){
             greeting.setText("Good Morning");
-        }else if(timeOfDay >= 12 && timeOfDay < 16){
+        }else if(timeOfDay >= 12 && timeOfDay < 18){
             greeting.setText("Good Afternoon");
-        }else if(timeOfDay >= 16 && timeOfDay < 21){
+        }else if(timeOfDay >= 18 && timeOfDay < 21){
             greeting.setText("Good Evening");
         }else if(timeOfDay >= 21 && timeOfDay < 24){
             greeting.setText("Good Evening");
@@ -109,6 +109,23 @@ public class MyDash extends AppCompatActivity {
             }
         });
 
+        myth = findViewById(R.id.myth);
+        myth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, myth.class);
+                startActivity(i);
+            }
+        });
+
+        handwash = findViewById(R.id.handwash);
+        handwash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, handwash.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps2"
+    android:background="@mipmap/bgapps2"
     tools:context=".info"
     android:orientation="vertical">
 
@@ -59,77 +59,84 @@
 
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="Be Ready for Coronavirus"
-                            android:textColor="#000000"
-                            android:textSize="25sp"
-                            android:padding="10dp"/>
+                            android:orientation="vertical">
 
-                        <HorizontalScrollView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <TextView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Be Ready for Coronavirus"
+                                android:textColor="#000000"
+                                android:textSize="25sp"
+                                android:padding="10dp"/>
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
 
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready1"/>
+                                    <ImageView
+                                        android:id="@+id/beready1"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready2"/>
+                                    <ImageView
+                                        android:id="@+id/beready2"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready3"/>
+                                    <ImageView
+                                        android:id="@+id/beready3"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready4"/>
+                                    <ImageView
+                                        android:id="@+id/beready4"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready5"/>
+                                    <ImageView
+                                        android:id="@+id/beready5"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready6"/>
+                                    <ImageView
+                                        android:id="@+id/beready6"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/beready7"/>
+                                    <ImageView
+                                        android:id="@+id/beready7"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                            </LinearLayout>
-                        </HorizontalScrollView>
+                                </LinearLayout>
+                            </HorizontalScrollView>
 
 
-                    </LinearLayout>
+                        </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -155,6 +162,15 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Protect Yourself"
+                                android:textColor="#000000"
+                                android:textSize="25sp"
+                                android:padding="10dp"/>
+
                             <HorizontalScrollView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content">
@@ -166,28 +182,32 @@
 
 
                                     <ImageView
+                                        android:id="@+id/pro1"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/pro1"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/pro2"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/pro2"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/pro3"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/pro3"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/pro4"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/pro4"/>
+                                        android:src="@drawable/down"/>
 
 
 
@@ -240,47 +260,54 @@
 
 
                                     <ImageView
+                                        android:id="@+id/act1"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act1"/>
-"/>
+                                        android:src="@drawable/down"/>
+                                    "/>
 
                                     <ImageView
+                                        android:id="@+id/act2"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act2"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/act3"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act3"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/act4"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act4"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/act5"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act5"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/act6"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act6"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/act7"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/act7"/>
+                                        android:src="@drawable/down"/>
 
 
 
@@ -293,101 +320,109 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp">
-
-                <LinearLayout
-                    android:weightSum="1"
-                    android:orientation="horizontal"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-
-
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp">
 
                     <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="match_parent"
+                        >
 
-                        <TextView
-                            android:layout_width="wrap_content"
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="Getting Workplace Ready"
-                            android:textColor="#000000"
-                            android:textSize="25sp"
-                            android:padding="10dp"/>
+                            android:orientation="vertical">
 
-                        <HorizontalScrollView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
+                            <TextView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:orientation="horizontal">
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Getting Workplace Ready"
+                                android:textColor="#000000"
+                                android:textSize="25sp"
+                                android:padding="10dp"/>
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
 
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work1"/>
+                                    <ImageView
+                                        android:id="@+id/work1"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work2"/>
+                                    <ImageView
+                                        android:id="@+id/work2"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work3"/>
+                                    <ImageView
+                                        android:id="@+id/work3"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work4"/>
+                                    <ImageView
+                                        android:id="@+id/work4"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work5"/>
+                                    <ImageView
+                                        android:id="@+id/work5"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work6"/>
+                                    <ImageView
+                                        android:id="@+id/work6"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work7"/>
+                                    <ImageView
+                                        android:id="@+id/work7"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
-                                <ImageView
-                                    android:layout_marginRight="10dp"
-                                    android:layout_width="300dp"
-                                    android:layout_height="300dp"
-                                    android:src="@drawable/work8"/>
-
-
-                            </LinearLayout>
-                        </HorizontalScrollView>
+                                    <ImageView
+                                        android:id="@+id/work8"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_width="300dp"
+                                        android:layout_height="300dp"
+                                        android:src="@drawable/down"/>
 
 
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+
+                        </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
@@ -430,22 +465,25 @@
 
 
                                     <ImageView
+                                        android:id="@+id/hel1"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/hel1"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/hel2"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/hel2"/>
+                                        android:src="@drawable/down"/>
 
                                     <ImageView
+                                        android:id="@+id/hel3"
                                         android:layout_marginRight="10dp"
                                         android:layout_width="300dp"
                                         android:layout_height="300dp"
-                                        android:src="@drawable/hel3"/>
+                                        android:src="@drawable/down"/>
 
 
                                 </LinearLayout>

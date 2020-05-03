@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps1"
+    android:background="@mipmap/bgapps1"
     tools:context=".helpline"
     android:orientation="vertical">
 
@@ -91,7 +91,7 @@
                             android:id="@+id/shasto"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -144,7 +144,7 @@
                             android:id="@+id/a2i"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -197,7 +197,7 @@
                             android:id="@+id/iedcr1"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -250,7 +250,7 @@
                             android:id="@+id/iedcr2"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -303,7 +303,7 @@
                             android:id="@+id/iedcr3"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -356,7 +356,7 @@
                             android:id="@+id/iedcr4"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -409,7 +409,7 @@
                             android:id="@+id/iedcr5"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -463,7 +463,7 @@
                             android:id="@+id/iedcr6"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -518,7 +518,7 @@
                             android:id="@+id/icddrb1"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -571,7 +571,7 @@
                             android:id="@+id/icddrb2"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -624,7 +624,7 @@
                             android:id="@+id/icddrb3"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -677,7 +677,7 @@
                             android:id="@+id/icddrb4"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -730,7 +730,7 @@
                             android:id="@+id/icddrb5"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -783,7 +783,7 @@
                             android:id="@+id/icddrb6"
                             android:layout_width="55dp"
                             android:layout_height="55dp"
-                            android:src="@drawable/dial" />
+                            android:src="@mipmap/dial" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

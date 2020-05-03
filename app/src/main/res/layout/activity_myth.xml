@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bgapps1"
+    tools:context=".myth"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="20dp"
+        android:text="Myth Busters"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F9F9F9">
+
+
+                        <LinearLayout
+                            android:layout_width="441dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/myth1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth8"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth9"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth16"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth17"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth19"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+                            <ImageView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/myth21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/down" />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

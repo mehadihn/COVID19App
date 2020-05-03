@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".info"></activity>
+        <activity android:name=".handwash"></activity>
+        <activity android:name=".myth" />
+        <activity android:name=".info" />
         <activity android:name=".faq" />
         <activity android:name=".helpline" />
         <activity android:name=".hospital" />

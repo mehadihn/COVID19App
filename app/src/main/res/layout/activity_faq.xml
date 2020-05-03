@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgapps2"
+    android:background="@mipmap/bgapps2"
     tools:context=".faq"
     android:orientation="vertical">
 
@@ -18,6 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"/>
+
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,7 +49,7 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp">
+                    >
 
                     <LinearLayout
                         android:weightSum="1"
@@ -95,8 +97,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:weightSum="1"
@@ -144,8 +145,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:weightSum="1"
@@ -193,8 +193,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:weightSum="1"
@@ -246,8 +245,7 @@ Seek immediate medical care if you have difficulty breathing or pain/pressure in
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:weightSum="1"
@@ -297,8 +295,7 @@ Some reports have indicated that people with no symptoms can transmit the virus.
                 <androidx.cardview.widget.CardView
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="12dp">
+                    app:cardElevation="6dp">
 
                     <LinearLayout
                         android:weightSum="1"
