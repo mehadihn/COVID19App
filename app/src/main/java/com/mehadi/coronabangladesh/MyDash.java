@@ -22,6 +22,7 @@ public class MyDash extends AppCompatActivity {
     private RelativeLayout worldAct;
     private RelativeLayout hospital;
     private RelativeLayout helpline , faq, information, myth, handwash, donate;
+    private ImageView credit;
 
     private TextView greeting;
     @Override
@@ -137,7 +138,7 @@ public class MyDash extends AppCompatActivity {
             }
         });
 
-        ImageView credit = findViewById(R.id.credit);
+        credit = findViewById(R.id.credit);
         credit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

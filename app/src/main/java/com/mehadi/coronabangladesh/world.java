@@ -3,8 +3,10 @@ package com.mehadi.coronabangladesh;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +29,15 @@ public class world extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_world);
+
+        ImageView backbutton = findViewById(R.id.backbutton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(world.this, MyDash.class);
+                startActivity(i);
+            }
+        });
 
         worldTotalRecover = findViewById(R.id.worldTotalRecover);
         worldTotalDeath = findViewById(R.id.worldTotalDeath);

@@ -1,9 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".credit">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_weight="4"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textAlignment="center"
+            android:textSize="30sp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="Hello There! Thank you for using the app. This app was develop with the help of YouTube and other platforms. I am still learning, do pardon my mistakes."
+        />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="Developeved By"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="Mehadi Hassan"
+        />
+
+    <ImageView
+        android:id="@+id/git"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/git"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="Data Collected Form"
+        />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center">
+
+      <ImageView
+          android:id="@+id/whoimg"
+          android:padding="10dp"
+          android:layout_gravity="center"
+          android:layout_width="65dp"
+          android:layout_height="65dp"
+          android:src="@drawable/down"
+          />
+      <ImageView
+          android:id="@+id/coronabd"
+          android:padding="10dp"
+          android:layout_gravity="center"
+          android:layout_width="65dp"
+          android:layout_height="65dp"
+          android:src="@drawable/down"
+          />
+      <ImageView
+          android:id="@+id/novel"
+          android:padding="10dp"
+          android:layout_gravity="center"
+          android:layout_width="65dp"
+          android:layout_height="65dp"
+          android:src="@drawable/down"
+          />
+
+
+
+
+  </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:text="&amp; Others"
+        />
+
+
+
+</LinearLayout>

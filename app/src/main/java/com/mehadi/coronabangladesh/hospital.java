@@ -17,6 +17,15 @@ public class hospital extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital);
 
+        ImageView backbutton = findViewById(R.id.backbutton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(hospital.this, MyDash.class);
+                startActivity(i);
+            }
+        });
+
         kuwaitCall = findViewById(R.id.kuwaitCall);
         kuwaitCall.setOnClickListener(new View.OnClickListener() {
             @Override

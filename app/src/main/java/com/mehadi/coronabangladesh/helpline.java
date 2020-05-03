@@ -15,6 +15,15 @@ public class helpline extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_helpline);
 
+        ImageView backbutton = findViewById(R.id.backbutton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(helpline.this, MyDash.class);
+                startActivity(i);
+            }
+        });
+
         shasto = findViewById(R.id.shasto);
         shasto.setOnClickListener(new View.OnClickListener() {
             @Override

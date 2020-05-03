@@ -6,15 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".handwash">
 
+
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:orientation="vertical"
+            android:padding="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+            <LinearLayout
+                android:weightSum="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/backbutton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/back"/>
 
+                <TextView
+                    android:layout_weight="4"
+                    android:fontFamily="@font/roboto_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handwash"
+                    android:textAlignment="center"
+                    android:textSize="30sp"/>
+
+
+            </LinearLayout>
             <ImageView
                 android:id="@+id/handwash"
                 android:layout_width="wrap_content"

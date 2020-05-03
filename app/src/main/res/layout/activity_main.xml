@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/grad_bg"
+    android:background="#FF5454"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -17,18 +17,18 @@
             android:id="@+id/logoimage"
             android:layout_width="252dp"
             android:layout_height="187dp"
-            android:src="@drawable/logo3"></ImageView>
+            android:src="@drawable/logowhite"></ImageView>
 
         <TextView
             android:id="@+id/logotext"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
             android:layout_below="@+id/logoimage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Corona Bangladesh"
+            android:text="COVID-19"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:fontFamily="sans-serif"
+            android:fontFamily="@font/roboto_bold"
             android:layout_centerHorizontal="true"/>
 
 

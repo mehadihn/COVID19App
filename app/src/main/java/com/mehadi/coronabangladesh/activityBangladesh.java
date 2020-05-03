@@ -3,7 +3,9 @@ package com.mehadi.coronabangladesh;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,12 +25,25 @@ import android.os.Bundle;
 public class activityBangladesh extends AppCompatActivity {
     private TextView bdTotalConfirm, bdTodayNewCase, bdTotalDeath, bdTodayNewDeath, bdTotalRecover, bdActive, bdCritical;
     private RequestQueue mQueue;
+    private ImageView backbutton;
     ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bangladesh);
+
+        backbutton = findViewById(R.id.backbutton);
+        backbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(activityBangladesh.this, MyDash.class);
+                startActivity(i);
+            }
+        });
+
+
+
 
         bdTotalConfirm = findViewById(R.id.bdTotalConfirm);
         bdTodayNewCase = findViewById(R.id.bdTodayNewCase);
@@ -41,6 +56,12 @@ public class activityBangladesh extends AppCompatActivity {
         mQueue = Volley.newRequestQueue(this);
 
         jsonParse();
+
+
+
+
+
+
     }
 
     private void jsonParse() {
