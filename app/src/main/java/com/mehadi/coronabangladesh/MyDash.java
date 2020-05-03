@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -20,7 +21,7 @@ public class MyDash extends AppCompatActivity {
     private RelativeLayout banglaAct;
     private RelativeLayout worldAct;
     private RelativeLayout hospital;
-    private RelativeLayout helpline , faq, information, myth, handwash;
+    private RelativeLayout helpline , faq, information, myth, handwash, donate;
 
     private TextView greeting;
     @Override
@@ -123,6 +124,24 @@ public class MyDash extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MyDash.this, handwash.class);
+                startActivity(i);
+            }
+        });
+
+        donate = findViewById(R.id.donate);
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, donate.class);
+                startActivity(i);
+            }
+        });
+
+        ImageView credit = findViewById(R.id.credit);
+        credit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MyDash.this, credit.class);
                 startActivity(i);
             }
         });
