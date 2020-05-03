@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    tools:context=".helpline"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="20dp"
+        android:text="Emergency Numbers"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:columnCount="1"
+                android:rowCount="1"
+                android:alignmentMode="alignMargins"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.cardview.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp" >
+
+                    <LinearLayout
+                        android:weightSum="1"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:fontFamily="@font/roboto_bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="Kuwait Bangladesh Friendship Government Hospital"
+                                android:textColor="#6f6f6f"
+                                android:textSize="20sp"/>
+                            <TextView
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:text="319 Isakha Ave, Dhaka 1230
+"
+                                android:textColor="#6f6f6f"
+                                android:textSize="18sp"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/kuwaitCall"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:src="@drawable/dial" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
