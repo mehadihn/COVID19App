@@ -1,6 +1,7 @@
 package com.mehadi.coronabangladesh;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +9,11 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 public class handwash extends AppCompatActivity {
+    private SwipeRefreshLayout swipehand;
+    private ImageView handwash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +28,32 @@ public class handwash extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        handwash = findViewById(R.id.handwash);
 
-        ImageView handwash = findViewById(R.id.handwash);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/handwash/how_to_handwash_lge.gif").into(handwash);
+        loadImg();
 
+        swipehand = findViewById(R.id.swipehand);
+        swipehand.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadImg();
+                swipehand.setRefreshing(false);
+            }
+        });
+
+
+
+
+
+    }
+
+    public void loadImg(){
+
+        RequestOptions options = new RequestOptions()
+                .placeholder(R.drawable.down)
+                .error(R.drawable.fail);
+
+
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/handwash/how_to_handwash_lge.gif").apply(options).into(handwash);
     }
 }

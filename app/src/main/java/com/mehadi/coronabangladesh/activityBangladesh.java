@@ -1,6 +1,7 @@
 package com.mehadi.coronabangladesh;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,6 +28,7 @@ public class activityBangladesh extends AppCompatActivity {
     private RequestQueue mQueue;
     private ImageView backbutton;
     ProgressBar progressBar;
+    private SwipeRefreshLayout swipebd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +60,14 @@ public class activityBangladesh extends AppCompatActivity {
         jsonParse();
 
 
-
+        swipebd = findViewById(R.id.swipebd);
+        swipebd.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                jsonParse();
+                swipebd.setRefreshing(false);
+            }
+        });
 
 
 

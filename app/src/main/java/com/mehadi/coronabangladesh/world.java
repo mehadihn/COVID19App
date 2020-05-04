@@ -1,6 +1,7 @@
 package com.mehadi.coronabangladesh;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,6 +26,7 @@ public class world extends AppCompatActivity {
     TextView worldTotalRecover , worldTotalDeath , worldTotalConfirm, worldTodayNewCase , worldTodayNewDeath , worldActive , worldCritical;
     private RequestQueue mQueue;
     ProgressBar progressBar;
+    private SwipeRefreshLayout swipeworld;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +54,17 @@ public class world extends AppCompatActivity {
 
 
         jsonParse();
+
+
+        swipeworld = findViewById(R.id.swipeworld);
+        swipeworld.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                jsonParse();
+                swipeworld.setRefreshing(false);
+            }
+        });
+
     }
 
     private void jsonParse() {

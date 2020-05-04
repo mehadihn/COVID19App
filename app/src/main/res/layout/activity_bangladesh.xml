@@ -55,10 +55,22 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp">
 
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipebd"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
+
+                
+
+
 
 
                 <GridLayout
@@ -315,7 +327,10 @@
                     </androidx.cardview.widget.CardView>
 
                 </GridLayout>
+
+
             </ScrollView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
             <ProgressBar
                 android:layout_centerInParent = "true"
                 android:id="@+id/bdProgress"
