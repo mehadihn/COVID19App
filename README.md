@@ -14,13 +14,19 @@ This a simple android app with decent UI to get you updated with the current sta
 <table>
   <tr>
     <td>Splash Screen</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
+     <td>Dashboard</td>
+      <td>Bangladesh Statistics</td>
+      <td>Worldwide Statistics</td>
+    <td>Emergency Numbers</td>
+    
+    
   </tr>
   <tr>
     <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
-    <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
-    <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
+    <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-26-04-265_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
+    <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-07-40-057_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
+  <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-07-45-791_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
+  <td><img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-07-58-185_com.mehadi.coronabangladesh.jpg" width=270 height=480></td>
   </tr>
  </table>
 
