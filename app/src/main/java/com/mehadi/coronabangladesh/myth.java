@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
-public class myth extends AppCompatActivity {
+public class    myth extends AppCompatActivity {
     private ImageView myth1, myth2, myth3, myth4, myth5, myth6, myth7, myth8, myth9, myth10, myth11, myth12, myth13,
             myth14, myth15, myth16, myth17, myth18, myth19, myth20, myth21;
 

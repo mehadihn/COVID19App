@@ -11,32 +11,30 @@
 
 
     <LinearLayout
-        android:weightSum="4"
+        android:background="#000000"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="30dp"
-        android:gravity="center">
+        android:weightSum="4">
 
         <ImageView
             android:id="@+id/backbutton"
             android:layout_width="30dp"
             android:layout_height="30dp"
 
-            android:src="@drawable/back" />
+            android:src="@drawable/backwhite" />
 
         <TextView
-            android:layout_weight="4"
-            android:fontFamily="@font/roboto_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Worldwide COVID-19 Statistics"
+            android:layout_weight="4"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Wordwide Statistics"
             android:textAlignment="center"
-            android:textSize="30sp"/>
-
-
-
-
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -48,11 +46,7 @@
         android:orientation="vertical">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+
 
             <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/swipeworld"
@@ -60,278 +54,1360 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-
-
-            <GridLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:alignmentMode="alignMargins"
-                android:columnCount="1"
-                android:rowCount="3">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:background="#FFFFFF">
 
                     <LinearLayout
-
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="16dp">
+                        android:padding="10dp">
 
-                        <TextView
-                            android:id="@+id/worldTotalConfirm"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:fontFamily="@font/roboto_medium"
-                            android:textAlignment="center"
-                            android:textColor="#eb4034"
-                            android:textSize="50sp"
-                            android:text="-" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="Total Confirmed"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/worldTotalDeath"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:fontFamily="@font/roboto_medium"
-                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:text="Worldwide"
                             android:textColor="#000000"
-                            android:textSize="50sp"
-                            android:text="-" />
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/worldConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/worldRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/worldDeath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/worldNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="Total Death"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/worldTotalRecover"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textAlignment="center"
-                            android:textColor="#7ddb65"
-                            android:textSize="50sp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="-" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="Total Recoverd"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/worldTodayNewCase"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textAlignment="center"
-                            android:textColor="#eb4034"
-                            android:textSize="50sp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="-" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="New Cases"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/worldTodayNewDeath"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:text="Asia"
                             android:textColor="#000000"
-                            android:textSize="50sp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="-" />
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/asiaConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/asiaRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/asiaDeath"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/asiaNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="New Deaths"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/worldActive"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:text="Africa"
                             android:textColor="#000000"
-                            android:textSize="50sp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="-" />
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/africaConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/africaRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/africaDeath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/africaNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="Active Cases"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_margin="12dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="6dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        android:padding="16dp">
-
-                        <TextView
-                            android:id="@+id/worldCritical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:textAlignment="center"
+                            android:padding="5dp"
+                            android:text="South America"
                             android:textColor="#000000"
-                            android:textSize="50sp"
-                            android:fontFamily="@font/roboto_medium"
-                            android:text="-" />
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/americaConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/americaRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/americaDeath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/americaNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="155dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/roboto_bold"
-                            android:text="Critical"
-                            android:textColor="#6f6f6f"
-                            android:textSize="25sp" />
+                            android:padding="5dp"
+                            android:text="North America"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/antarcticaConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/antarcticaRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/antarcticaDeath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/antarcticaNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="20sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Europe"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/europeConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/europeRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/europeDeath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/europeNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        <TextView
+                            android:layout_width="113dp"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="Australia"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scrollbars="horizontal">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/australiaConfirm"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#eb4034"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Confirmed"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/australiaRecovered"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#03fc20"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Recovered"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/australiaDeath"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e61d07"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="Total Death"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="200dp"
+
+                                    android:layout_height="120dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="20dp"
+                                    android:padding="20dp"
+                                    app:cardBackgroundColor="#f5f5f5"
+                                    app:cardCornerRadius="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="16dp">
+
+                                        <TextView
+                                            android:id="@+id/australiaNewcases"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/roboto_medium"
+                                            android:text="-"
+                                            android:textAlignment="center"
+                                            android:textColor="#e6e207"
+                                            android:textSize="30sp" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="12dp"
+                                            android:fontFamily="@font/roboto_bold"
+                                            android:text="New Cases"
+                                            android:textAlignment="center"
+                                            android:textColor="#6f6f6f"
+                                            android:textSize="18sp" />
+
+
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
 
                     </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
-            </GridLayout>
-            </ScrollView>
-            <ProgressBar
-                android:layout_centerInParent = "true"
-                android:id="@+id/worldProgress"
-                android:indeterminate="true"
-                android:indeterminateDrawable="@drawable/load"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+
+                </ScrollView>
+
 
             </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-        </RelativeLayout>
+
 
 
 
