@@ -32,6 +32,7 @@ This a simple android app with decent UI to get you updated with the current sta
 
 ## Download
 To download the app for android app click one of the links
+<br/>
 1.[Link 1 (Direct Link)](https://raw.githubusercontent.com/mehadihn/COVID19App/master/app/release/COVID-19%20by%20Mehadi.apk)<br/>
 2.[Link 2 (Press the Download button)](https://github.com/mehadihn/COVID19App/blob/master/app/release/COVID-19%20by%20Mehadi.apk)
 Do allow unknown sources in your mobile settings.
