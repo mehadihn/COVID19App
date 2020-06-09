@@ -10,12 +10,13 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:weightSum="4"
+        android:background="#5036f7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="30dp"
-        android:gravity="center">
+        android:weightSum="4">
 
         <ImageView
             android:id="@+id/backbutton"

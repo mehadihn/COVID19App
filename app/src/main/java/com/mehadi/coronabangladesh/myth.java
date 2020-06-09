@@ -79,27 +79,27 @@ public class    myth extends AppCompatActivity {
                 .error(R.drawable.fail);
 
 
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/1.png").apply(options).into(myth1);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/2.png").apply(options).into(myth2);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/3.png").apply(options).into(myth3);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/4.png").apply(options).into(myth4);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/5.png").apply(options).into(myth5);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/6.png").apply(options).into(myth6);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/7.png").apply(options).into(myth7);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/8.png").apply(options).into(myth8);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/9.png").apply(options).into(myth9);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/10.png").apply(options).into(myth10);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/1.png").apply(options).into(myth1);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/2.png").apply(options).into(myth2);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/3.png").apply(options).into(myth3);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/4.png").apply(options).into(myth4);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/5.png").apply(options).into(myth5);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/6.png").apply(options).into(myth6);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/7.png").apply(options).into(myth7);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/8.png").apply(options).into(myth8);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/9.png").apply(options).into(myth9);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/10.png").apply(options).into(myth10);
 
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/11.png").apply(options).into(myth11);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/12.jpg").apply(options).into(myth12);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/13.jpg").apply(options).into(myth13);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/14.jpg").apply(options).into(myth14);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/15.png").apply(options).into(myth15);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/16.png").apply(options).into(myth16);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/17.png").apply(options).into(myth17);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/18.png").apply(options).into(myth18);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/19.png").apply(options).into(myth19);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/20.png").apply(options).into(myth20);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/myth/21.png").apply(options).into(myth21);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/11.png").apply(options).into(myth11);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/12.jpg").apply(options).into(myth12);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/13.jpg").apply(options).into(myth13);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/14.jpg").apply(options).into(myth14);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/15.png").apply(options).into(myth15);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/16.png").apply(options).into(myth16);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/17.png").apply(options).into(myth17);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/18.png").apply(options).into(myth18);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/19.png").apply(options).into(myth19);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/20.png").apply(options).into(myth20);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/myth/21.png").apply(options).into(myth21);
     }
 }

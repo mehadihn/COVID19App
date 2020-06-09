@@ -54,6 +54,6 @@ public class handwash extends AppCompatActivity {
                 .error(R.drawable.fail);
 
 
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/handwash/how_to_handwash_lge.gif").apply(options).into(handwash);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/handwash/how_to_handwash_lge.gif").apply(options).into(handwash);
     }
 }

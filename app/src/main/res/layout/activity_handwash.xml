@@ -18,17 +18,18 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:padding="30dp"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:weightSum="4"
+                android:background="#e8e8e8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="30dp"
-                android:gravity="center">
+                android:weightSum="4">
                 <ImageView
                     android:id="@+id/backbutton"
                     android:layout_width="30dp"
@@ -49,6 +50,7 @@
 
 
             <ImageView
+                android:scaleType="fitCenter"
                 android:id="@+id/handwash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

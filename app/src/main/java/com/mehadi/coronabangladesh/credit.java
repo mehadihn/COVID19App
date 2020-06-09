@@ -39,10 +39,9 @@ public class credit extends AppCompatActivity {
         whoimg = findViewById(R.id.whoimg);
         coronabd = findViewById(R.id.coronabd);
         novel = findViewById(R.id.novel);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Credit/novelcovid.jpg").into(novel);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Credit/corona.png").into(coronabd);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Credit/who.jpg").into(whoimg);
-
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Credit/novelcovid.jpg").into(novel);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Credit/corona.png").into(coronabd);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Credit/who.jpg").into(whoimg);
 
     }
 }

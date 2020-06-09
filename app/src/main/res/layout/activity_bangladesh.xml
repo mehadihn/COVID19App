@@ -12,12 +12,13 @@
 
 
     <LinearLayout
-        android:weightSum="4"
+        android:background="#36f774"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="30dp"
-        android:gravity="center">
+        android:weightSum="4">
 
         <ImageView
             android:id="@+id/backbutton"
@@ -31,7 +32,7 @@
             android:fontFamily="@font/roboto_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bangladesh COVID-19 Statistics"
+            android:text="Bangladesh Statistics"
             android:textAlignment="center"
             android:textSize="30sp"/>
 
@@ -51,9 +52,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
+            android:layout_height="wrap_content">
 
             <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
                 android:id="@+id/swipebd"
@@ -68,7 +67,7 @@
                 android:layout_height="wrap_content"
                 >
 
-                
+
 
 
 
@@ -331,13 +330,7 @@
 
             </ScrollView>
             </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-            <ProgressBar
-                android:layout_centerInParent = "true"
-                android:id="@+id/bdProgress"
-                android:indeterminate="true"
-                android:indeterminateDrawable="@drawable/load"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+
 
         </RelativeLayout>
 

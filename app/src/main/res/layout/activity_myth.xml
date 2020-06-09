@@ -5,17 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bgapps1"
     tools:context=".myth"
     android:orientation="vertical">
 
+
     <LinearLayout
-        android:weightSum="4"
+        android:background="#a103fc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="30dp"
-        android:gravity="center">
+        android:weightSum="4">
+        >
 
         <ImageView
             android:id="@+id/backbutton"

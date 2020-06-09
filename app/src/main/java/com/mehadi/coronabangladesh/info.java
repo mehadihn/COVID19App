@@ -83,35 +83,35 @@ public class info extends AppCompatActivity {
                 .error(R.drawable.fail);
 
 
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready1.png").apply(options).into(beready1);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready2.png").apply(options).into(beready2);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready3.png").apply(options).into(beready3);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready4.png").apply(options).into(beready4);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready5.png").apply(options).into(beready5);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready6.png").apply(options).into(beready6);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/beready/beready7.png").apply(options).into(beready7);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/pro/pro1.jpg").apply(options).into(pro1);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/pro/pro2.jpg").apply(options).into(pro2);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/pro/pro3.jpg").apply(options).into(pro3);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/pro/pro4.jpg").apply(options).into(pro4);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act1.png").apply(options).into(act1);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act2.png").apply(options).into(act2);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act3.png").apply(options).into(act3);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act4.png").apply(options).into(act4);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act5.png").apply(options).into(act5);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act6.png").apply(options).into(act6);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Activity/act6.png").apply(options).into(act7);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Health/hel1.jpg").apply(options).into(hel1);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Health/hel2.jpg").apply(options).into(hel2);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Health/hel3.jpg").apply(options).into(hel3);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work1.png").apply(options).into(work1);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work2.png").apply(options).into(work2);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work3.png").apply(options).into(work3);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work4.png").apply(options).into(work4);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work5.png").apply(options).into(work5);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work6.png").apply(options).into(work6);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work7.png").apply(options).into(work7);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Work/work8.png").apply(options).into(work8);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready1.png").apply(options).into(beready1);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready2.png").apply(options).into(beready2);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready3.png").apply(options).into(beready3);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready4.png").apply(options).into(beready4);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready5.png").apply(options).into(beready5);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready6.png").apply(options).into(beready6);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/beready/beready7.png").apply(options).into(beready7);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/pro/pro1.jpg").apply(options).into(pro1);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/pro/pro2.jpg").apply(options).into(pro2);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/pro/pro3.jpg").apply(options).into(pro3);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/pro/pro4.jpg").apply(options).into(pro4);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act1.png").apply(options).into(act1);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act2.png").apply(options).into(act2);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act3.png").apply(options).into(act3);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act4.png").apply(options).into(act4);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act5.png").apply(options).into(act5);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act6.png").apply(options).into(act6);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Activity/act6.png").apply(options).into(act7);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Health/hel1.jpg").apply(options).into(hel1);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Health/hel2.jpg").apply(options).into(hel2);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Health/hel3.jpg").apply(options).into(hel3);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work1.png").apply(options).into(work1);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work2.png").apply(options).into(work2);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work3.png").apply(options).into(work3);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work4.png").apply(options).into(work4);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work5.png").apply(options).into(work5);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work6.png").apply(options).into(work6);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work7.png").apply(options).into(work7);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Work/work8.png").apply(options).into(work8);
 
     }
 }

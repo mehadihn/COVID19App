@@ -6,17 +6,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/bgapps"
     tools:context=".hospital"
     android:orientation="vertical">
 
     <LinearLayout
-        android:weightSum="4"
+        android:background="#1c348c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
         android:padding="30dp"
-        android:gravity="center">
+        android:weightSum="4">
 
         <ImageView
             android:id="@+id/backbutton"

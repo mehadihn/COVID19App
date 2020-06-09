@@ -52,8 +52,6 @@ public class donate extends AppCompatActivity {
         ektkimg = findViewById(R.id.ektkimg);
         bracimg = findViewById(R.id.bracimg);
 
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Donate/brac1.jpg").into(bracimg);
-        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/imagehost/master/Donate/ek.jpg").into(ektkimg);
-
-    }
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Donate/brac1.jpg").into(bracimg);
+        Glide.with(this).load("https://raw.githubusercontent.com/mehadihn/COVID19App/master/Images/Donate/ek.jpg").into(ektkimg);}
 }

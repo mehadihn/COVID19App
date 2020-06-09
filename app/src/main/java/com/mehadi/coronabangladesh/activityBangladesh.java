@@ -54,7 +54,7 @@ public class activityBangladesh extends AppCompatActivity {
         bdTotalRecover = findViewById(R.id.bdTotalRecover);
         bdActive = findViewById(R.id.bdActive);
         bdCritical = findViewById(R.id.bdCritical);
-        progressBar = findViewById(R.id.bdProgress);
+        //progressBar = findViewById(R.id.bdProgress);
         mQueue = Volley.newRequestQueue(this);
 
         jsonParse();
@@ -78,7 +78,7 @@ public class activityBangladesh extends AppCompatActivity {
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-                progressBar.setVisibility(View.GONE);
+
                 try {
                     JSONObject jsonObject = new JSONObject(response.toString());
                     bdTotalConfirm.setText(jsonObject.getString("cases"));
