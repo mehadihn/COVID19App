@@ -11,6 +11,6 @@ This a simple android app with decent UI to get you updated with the current sta
 5. Donation
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width="200" height=480/> <img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width="425"/> 
+<img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width="425" height=200/> <img src="https://raw.githubusercontent.com/mehadihn/COVID19App/master/Screenshots/Screenshot_2020-06-09-23-10-34-578_com.mehadi.coronabangladesh.jpg" width="425"/> 
 
 
