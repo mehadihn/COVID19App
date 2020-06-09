@@ -13,7 +13,7 @@ This a simple android app with decent UI to get you updated with the current sta
 ## Screenshots
 <table>
   <tr>
-    <td>First Screen Page</td>
+    <td>Splash Screen</td>
      <td>Holiday Mention</td>
      <td>Present day in purple and selected day in pink</td>
   </tr>
